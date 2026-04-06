@@ -2,4 +2,4 @@ replicaCount: 2
 
 image:
   repository: ghcr.io/tatsukikodama8/my-app
-  tag: bb245f4e44cede9ec054b3330679306e3160858f
+  tag: 2aaf9cd373fa941f7603ec8b159b7f7b1d83a319
