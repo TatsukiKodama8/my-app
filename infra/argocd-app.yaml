@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/tatsukikodama8/my-app  # 要置き換え（小文字で）
+    targetRevision: main
+    path: helm
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true      # Git上に存在しないリソースを自動削除
+      selfHeal: true   # 手動でkubectl applyしても自動で元に戻す
