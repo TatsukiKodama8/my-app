@@ -1,5 +1,5 @@
 replicaCount: 2
 
 image:
-  repository: ghcr.io/TatsukiKodama8/my-app
+  repository: ghcr.io/tatsukikodama8/my-app
   tag: 94b127c2848328f3bf94ec039d76ecd88f6bd635
